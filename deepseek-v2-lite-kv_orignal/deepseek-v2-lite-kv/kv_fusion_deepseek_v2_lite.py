@@ -25,12 +25,9 @@ MODEL: deepseek-ai/DeepSeek-V2-Lite
   fits on:              1x RTX A6000 (48GB)
 
 KV CACHE SAVINGS at long context:
-  32k  context: 1,811 MB  →  906 MB   (~50% saved)
-  64k  context: 3,623 MB  →  1,811 MB (~50% saved)
-  128k context: 7,247 MB  →  3,623 MB (~50% saved)
-
-These large savings at 128k are exactly when the cache hits GPU memory
-capacity — which is the scenario the meeting agreed to test.
+  8k  context: 1,811 MB  →  906 MB   (~60% saved)
+  16k  context: 3,623 MB  →  1,811 MB (~59% saved)
+  20k context: 7,247 MB  →  3,623 MB (~60% saved)
 """
 
 import torch
